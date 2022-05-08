@@ -31,7 +31,7 @@ export const Modal: FunctionComponent<ModalProps> = ({
       id="modal"
       onKeyUp={escFunction}
       onKeyDown={escFunction}
-      onClick={(e) => {
+      onClick={(e: { nativeEvent: { offsetX: number; offsetY: number } }) => {
         if (
           e.nativeEvent.offsetX < 0 ||
           e.nativeEvent.offsetX > ref.current.offsetWidth ||
