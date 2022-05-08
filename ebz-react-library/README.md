@@ -1,4 +1,4 @@
-# ebz-ui-library
+# ebz-react-library
 
 Open-source React-TypeScript components.
 
@@ -9,7 +9,7 @@ Open-source React-TypeScript components.
 The recommended workflow is to run TSDX in one terminal:
 
 ```bash
-npm i @elbaz888/ebz-ui-library
+npm i @elbaz888/ebz-react-library
 ```
 
 ## Components
