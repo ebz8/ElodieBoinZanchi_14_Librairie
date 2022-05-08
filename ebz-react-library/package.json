@@ -22,7 +22,8 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16",
+    "styled-components": "^5.3.5"
   },
   "husky": {
     "hooks": {
@@ -35,7 +36,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "ebz-react-library",
+  "name": "@elbaz888/ebz-react-library",
   "author": "Elodie Boin Zanchi",
   "module": "dist/ebz-react-library.esm.js",
   "size-limit": [
@@ -66,9 +67,7 @@
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
-    "typescript": "^4.6.4"
-  },
-  "dependencies": {
+    "typescript": "^4.6.4",
     "@types/styled-components": "^5.1.25",
     "styled-components": "^5.3.5"
   }
