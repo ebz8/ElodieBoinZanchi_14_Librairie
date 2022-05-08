@@ -21,14 +21,14 @@ To create a new modal instance, import the component and his associated custom h
 ```typescript
 import { useModal } from '@elbaz888/ebz-react-library'
 import { Modal } from '@elbaz888/ebz-react-library'
-
-// import hooks you need
-const { showModal, hideModal, toggleModal } = useModal()
 ```
 
-and, for example, use the component as :
+and use it in a functionnal component :
 
 ```typescript
+// import hooks you need before the render
+const { showModal, hideModal, toggleModal } = useModal()
+
 <Modal isOpened={isOpened} onClose={onClose} modalContent="Your content here." />
 <button onClick={toggleModal}> Toggle me </button>
 ```
