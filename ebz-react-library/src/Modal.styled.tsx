@@ -28,7 +28,6 @@ export const Dialog = styled.dialog`
 export const Form = styled.form`
   display: flex;
   flex-flow: column;
-  gap: 1.5rem;
 `
 
 export const CloseBtn = styled.button`
@@ -49,4 +48,12 @@ export const Content = styled.article`
   overscroll-behavior-y: contain;
   display: grid;
   justify-items: flex-start;
+
+  h1 {
+    margin: .2rem 0;
+  }
+
+  p {
+    margin: .5rem 0;
+  }
 `

@@ -53,6 +53,7 @@ export const Modal: FunctionComponent<ModalProps> = ({
           X
         </CloseBtn>
         <Content className="content">
+          {modalTitle && <h1>{modalTitle}</h1>}
           <p>{modalContent}</p>
         </Content>
       </Form>
