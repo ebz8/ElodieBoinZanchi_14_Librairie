@@ -29,6 +29,8 @@ and use it in a functionnal component :
 // import hooks you need before the render
 const { showModal, hideModal, toggleModal } = useModal()
 
-<Modal isOpened={isOpened} onClose={onClose} modalContent="Your content here." />
 <button onClick={toggleModal}> Toggle me </button>
+<Modal isOpened={isOpened} onClose={onClose} modalContent="Your content here." />
 ```
+
+> Full documentation and demo in [Storybook doc](https://ebz-react-library.netlify.app/)

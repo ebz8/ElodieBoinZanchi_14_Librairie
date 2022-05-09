@@ -14,7 +14,7 @@ const meta: Meta = {
     modalContent: 'Test',
     onClose: () => {},
   },
-}
+};
 export default meta
 
 const Template: Story<ModalProps> = ({ onClose, ...args }) => {
@@ -23,7 +23,12 @@ const Template: Story<ModalProps> = ({ onClose, ...args }) => {
 
   const handleHideModal = () => updateArgs({ isOpened: toggleModal() })
 
-  return <Modal isOpened={showModal} onClose={handleHideModal} {...args} />
+  return (
+    <>
+      <button onClick={toggleModal}>Toggle Modal</button>
+      <Modal isOpened={showModal} onClose={handleHideModal} {...args} />
+    </>
+  )
 }
 
 export const Default = Template.bind({})
